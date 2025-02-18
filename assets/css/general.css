@@ -2,8 +2,11 @@
 
     --mainColor: green;
     --fontColor: black;
-}
+}   
 
+html {
+    scroll-behavior: smooth;
+}
 
 .pagewidth {
     max-width: 1000px;

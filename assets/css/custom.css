@@ -7,3 +7,8 @@
 
     background-image: url('https://cdn2.iconfinder.com/data/icons/ui-basic-outline-2/512/UI_Basic_outline-18-512.png');
 }
+
+.card-body{
+
+    background-color: green;
+}
