@@ -1,0 +1,32 @@
+
+.btn {
+    background-color: #f21505 !important;
+    border-radius: 5px;
+    border: 1px solid green;
+    margin: 20px;
+    padding: 10px;
+    color: yellow;
+    font-size: 3rem !important;
+    display: inline-block
+}
+
+.btnBigFont {
+
+    font-size: 2rem
+}
+
+.btn:hover{
+    background-color: aliceblue;
+    color: red;
+    border-color: yellow
+}
+
+
+/*section design*/
+
+.sectionDesign{
+    padding: 20px 0;
+    margin: 10px 0;
+    background-color: lightcyan;
+    text-align: center
+}

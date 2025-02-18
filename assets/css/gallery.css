@@ -1,0 +1,24 @@
+.innergallery{
+    width: 100%;
+    border: 1px solid green;
+
+}
+
+.image{
+    width: 100%;
+}
+
+/*breakpoint*/
+@media screen and (min-width: 576px){
+
+    .imagesgallery {
+        display: flex;
+        max-width: 800px;
+        margin: auto
+    }
+    .image {
+        width: 50%;
+    }
+
+}
+
