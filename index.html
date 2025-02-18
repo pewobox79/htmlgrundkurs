@@ -23,20 +23,30 @@
 
 <body>
 
-    <header>
+    <header class="header pagewidth">
 
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>About us</li>
-                <li>Kontakt</li>
-            </ul>
-        </nav>
+        <div class="headerinner">
+            <nav>
+                <ul class="navinner">
+                    <a href="/">
+                        <li class="item btn">Home</li>
+                    </a>
+                    <a href="https://www.bild.de" target="_blank" title="link zu partnerseite">
+                        <li class="item btn">About us</li>
+                    </a>
+                    <a href="/">
+                        <li class="item btn">Kontakt</li>
+                    </a>
+                </ul>
+            </nav>
 
-        <h1>HTML Grundkurs</h1>
+            <div class="headertext">
+                <h1>HTML Grundkurs</h1>
+            </div>
+        </div>
     </header>
 
-    <main>
+    <main class="pagewidth">
         <section id="buttons" class="sectionDesign">
             <!--inline element-->
             <button class="btn">Click</button>
@@ -57,17 +67,38 @@
             <div class="innergallery">
                 <h3>bilder gallery</h3>
                 <div class="imagesgallery">
-                    <img class="image" src="assets/img/sonnenuntergang.jpeg">
-                    <img class="image"src="assets/img/waldbild.png">
+                    <img class="image" src="assets/img/sonnenuntergang.jpeg" alt="sonnenuntergang bild">
+                    <img class="image" src="assets/img/waldbild.png" alt="waldbild schön">
                 </div>
             </div>
+        </section>
+
+        <section id="form" class="sectionDesign">
+
+            <form>
+                <div class="forminner">
+                    <div class="formGroup">
+                        <label for="username">Username</label>
+                        <input type="text" name="username" placeholder="username" id="username">
+                    </div>
+
+                    <div class="formGroup">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" placeholder="email" id="email">
+                    </div>
+
+                </div>
+                <input type="checkbox" id="checkbox" name="checkbox">
+                <label for="checkbox">ich bin damit einverstanden</label>
+                <button class="btn">absenden</button>
+            </form>
         </section>
 
 
 
     </main>
 
-    <footer>
+    <footer class="pagewidth">
         <h4>hier ist der footer</h4>
     </footer>
 

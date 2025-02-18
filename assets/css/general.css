@@ -1,12 +1,51 @@
+:root {
+
+    --mainColor: green;
+    --fontColor: black;
+}
+
+
+.pagewidth {
+    max-width: 1000px;
+    margin: auto
+}
+
+.header {
+    background-color: aliceblue;
+    min-height: 150px;
+    border: 1px solid lavenderblush;
+    width: 100%;
+
+}
+
+.navinner {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 0
+}
+
+.item {
+    padding: 4px;
+    margin: 0 5px;
+    list-style-type: none;
+    text-align: center
+}
+
+.headertext {
+
+    padding: 5px;
+    text-align: center
+}
 
 .btn {
-    background-color: #f21505 !important;
+    background-color: #f21505;
     border-radius: 5px;
-    border: 1px solid green;
+    border: 1px solid var(--mainColor);
     margin: 20px;
     padding: 10px;
     color: yellow;
-    font-size: 3rem !important;
+    font-size: 1.3rem !important;
     display: inline-block
 }
 
@@ -15,7 +54,7 @@
     font-size: 2rem
 }
 
-.btn:hover{
+.btn:hover {
     background-color: aliceblue;
     color: red;
     border-color: yellow
@@ -24,9 +63,34 @@
 
 /*section design*/
 
-.sectionDesign{
+.sectionDesign {
     padding: 20px 0;
     margin: 10px 0;
     background-color: lightcyan;
     text-align: center
+}
+
+
+.forminner {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-width: 300px;
+    margin: auto;
+    /*gleichmäßiges aufteilen des äusseren bereiches*/
+}
+
+.formGroup {
+    display: flex;
+    margin: 3px 0;
+}
+.formGroup > label {
+    min-width: 100px
+}
+
+@media screen and (min-width: 576px) {
+
+    .navinner {
+        flex-direction: row;
+    }
 }
