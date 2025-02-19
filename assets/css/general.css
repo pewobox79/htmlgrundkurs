@@ -2,10 +2,20 @@
 
     --mainColor: green;
     --fontColor: black;
-}   
+    --sidebarBG: rgba(11, 219, 234, 0.4);
+
+    --sidebarWidth: 300px
+}
 
 html {
     scroll-behavior: smooth;
+}
+.printheader {
+    display: none;
+}
+body {
+    margin: 0;
+    padding: 0
 }
 
 .pagewidth {
@@ -63,6 +73,43 @@ html {
     border-color: yellow
 }
 
+/*main mit sidebar*/
+
+
+.maininner {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+
+}
+
+.sidebarseperator {
+    display: none;
+}
+
+
+
+
+.mainleft {
+    display: none
+}
+
+.mainright {
+    width: 100%
+}
+
+.header {
+    width: 100%
+}
+
+.bodyinner {
+
+    width: 100%;
+
+
+
+}
 
 /*section design*/
 
@@ -87,8 +134,20 @@ html {
     display: flex;
     margin: 3px 0;
 }
-.formGroup > label {
+
+.formGroup>label {
     min-width: 100px
+}
+
+.positioniertebox {
+
+
+    height: 70px;
+    background-color: red;
+    position: fixed;
+    top: 0;
+    left: var(--sidebarWidth);
+    width: calc(100% - var(--sidebarWidth))
 }
 
 @media screen and (min-width: 576px) {
@@ -96,4 +155,48 @@ html {
     .navinner {
         flex-direction: row;
     }
+
+    .mainleft {
+        width: var(--sidebarWidth);
+        background-color: var(--sidebarBG);
+        z-index: 1;
+        position: fixed;
+        height: 100dvh;
+        top: 0;
+        left: 0;
+        display: block;
+    }
+
+    .sidebarseperator {
+
+        width: var(--sidebarWidth);
+        border: 1px solid black;
+
+    }
+
+    .mainright {
+        position: absolute;
+        top: 150px;
+        left: var(--sidebarWidth)
+    }
+
+    .bodyinner {
+
+        width: calc(100% - var(--sidebarWidth));
+
+
+
+    }
+
+    .header {
+        position: absolute;
+        left: var(--sidebarWidth);
+        width: calc(100% - var(--sidebarWidth))
+    }
+
+    .sectionDesign {
+        width: calc(100% - var(--sidebarWidth))
+    }
 }
+
+

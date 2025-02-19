@@ -7,4 +7,31 @@ https://www.strato.de/
 https://getbootstrap.com/docs/5.0/components/scrollspy/#scrollspyHeading2
 
 
+https://web.dev/articles/vitals
 
+https://tinypng.com/
+
+
+
+https://www.w3schools.com/html/html5_semantic_elements.asp
+
+#can i use
+https://caniuse.com/?search=summary
+#test um die browser kompatibiliät zu testen
+
+
+#calender inbinden in website mit iframe
+https://calendly.com/
+oder dann mit dem google calender
+
+
+#google my business
+https://www.google.com/intl/en_us/business/
+
+
+
+#e-recht24 für datenschutz angelegenheiten
+https://www.e-recht24.de/
+
+#auftragsverarbeitung mit host
+https://av-vertrag.org/dienst-anbieter/wix/

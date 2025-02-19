@@ -1,0 +1,14 @@
+@media print {
+
+    #calendly,
+    #map,
+    .header {
+        display: none;
+    }
+
+    .printheader {
+        display: block
+    }
+
+
+}
